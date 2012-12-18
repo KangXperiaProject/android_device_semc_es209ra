@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
     device/semc/es209ra/prebuilt/init.es209ra.rc:root/init.es209ra.rc \
+    device/semc/es209ra/prebuilt/init.cm.rc:root/init.cm.rc \
     device/semc/es209ra/prebuilt/init.es209ra.usb.rc:root/init.es209ra.usb.rc \
     device/semc/es209ra/prebuilt/init.bt.sh:system/etc/init.bt.sh \
     device/semc/es209ra/prebuilt/DualMicControl.txt:system/etc/DualMicControl.txt \
@@ -62,6 +63,8 @@ PRODUCT_COPY_FILES += \
     device/semc/es209ra/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/es209ra/prebuilt/bootrec:root/sbin/bootrec \
     device/semc/es209ra/prebuilt/bootrec-device:root/sbin/bootrec-device \
+    device/semc/es209ra/prebuilt/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh \
+    device/semc/es209ra/prebuilt/nandroid-md5.sh:root/sbin/nandroid-md5.sh \
     device/semc/es209ra/recovery.fstab:root/recovery.fstab \
     device/semc/es209ra/prebuilt/vold.fstab:system/etc/vold.fstab \
     device/semc/es209ra/prebuilt/initlogo.rle:root/initlogo.rle
