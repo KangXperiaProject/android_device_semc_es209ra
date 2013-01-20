@@ -1,0 +1,30 @@
+diff -urN ./frameworks/base/core/res/res/values/arrays.xml ./frameworks/base/core/res/res/values/arrays.xml
+--- ./frameworks/base/core/res/res/values/arrays.xml	2013-01-20 22:25:33.501392701 +0100
++++ ./frameworks/base/core/res/res/values/arrays.xml	2013-01-20 18:33:31.737672017 +0100
+@@ -411,14 +411,12 @@
+     <array name="shutdown_reboot_options" translatable="false">
+         <item>@string/reboot_reboot</item>
+         <item>@string/reboot_recovery</item>
+-        <item>@string/reboot_bootloader</item>
+     </array>
+ 
+     <!-- Do not translate. Defines the shutdown actions passed to the kernel.
+          The first item should be empty for regular reboot. -->
+     <string-array name="shutdown_reboot_actions" translatable="false">
+         <item></item>
+-        <item>recovery</item>
+         <item>bootloader</item>
+     </string-array>
+ 
+diff -urN ./frameworks/base/core/res/res/values/strings.xml ./frameworks/base/core/res/res/values/strings.xml
+--- ./frameworks/base/core/res/res/values/strings.xml	2013-01-20 22:25:58.057392208 +0100
++++ ./frameworks/base/core/res/res/values/strings.xml	2013-01-20 18:33:43.773671775 +0100
+@@ -329,8 +329,6 @@
+     <string name="reboot_reboot">Reboot</string>
+     <!-- Button to reboot the phone into recovery, within the Reboot Options dialog -->
+     <string name="reboot_recovery">Recovery</string>
+-    <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
+-    <string name="reboot_bootloader">Bootloader</string>
+     <!-- Button to reboot the phone into bootmenu, within the Reboot Options dialog -->
+     <string name="reboot_bootmenu">Bootmenu</string>
+     <!-- Button to reboot the phone into fastboot, within the Reboot Options dialog -->
