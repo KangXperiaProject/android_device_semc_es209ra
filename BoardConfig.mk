@@ -4,7 +4,7 @@ TARGET_NO_BOOTLOADER := true
 
 PREBUILT_FOLDER := device/semc/es209ra/prebuilt
 
-TARGET_KERNEL_SOURCE := kernel/semc/es209ra
+TARGET_KERNEL_SOURCE := kernel/semc/qsd8k
 TARGET_KERNEL_CONFIG := cmx10_es209ra_defconfig
 TARGET_PREBUILT_KERNEL := $(PREBUILT_FOLDER)/kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
