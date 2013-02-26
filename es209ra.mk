@@ -41,6 +41,15 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libopencorehw
 
+PRODUCT_PACKAGES += \
+    Torch
+
+
+PRODUCT_PACKAGES += \
+	Torch
+
+PRODUCT_PACKAGES -= \
+	CMUpdater
 
 
 # These are the hardware-specific configuration files
@@ -75,8 +84,9 @@ PRODUCT_COPY_FILES += \
     device/semc/es209ra/prebuilt/10dnsconf:system/etc/init.d/10dnsconf \
     device/semc/es209ra/prebuilt/10regcode:system/etc/init.d/10regcode \
     device/semc/es209ra/prebuilt/10hostapconf:system/etc/init.d/10hostapconf \
-    device/semc/es209ra/prebuilt/reg_code:system/etc/wifi/reg_code \
-    device/semc/es209ra/prebuilt/ar6000.ko:system/lib/modules/ar6000.ko
+    device/semc/es209ra/prebuilt/reg_code:system/etc/wifi/reg_code 
+#\
+#    device/semc/es209ra/prebuilt/ar6000.ko:system/lib/modules/ar6000.ko
 
 #recovery resources
 PRODUCT_COPY_FILES += \
